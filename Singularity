@@ -9,9 +9,11 @@ from: ubuntu:16.04
   apt-get update
   apt-get install --no-install-recommends -y wget \
                       openjdk-9-jre \
+                      python3 \
+                      python3-pip
 
 
   mkdir /pycharm-src && cd /pycharm-src
   wget https://download.jetbrains.com/python/pycharm-community-2017.3.2.tar.gz
-  tar -xvzf pycharm-community-2017.3.2.tar.gz
+  tar -xzf pycharm-community-2017.3.2.tar.gz
   rm pycharm-community-2017.3.2.tar.gz
